@@ -1,4 +1,4 @@
-import { Header, Footer, Welcome, Services } from './components';
+import { Header, Footer, Welcome } from './components';
 import Market from './components/Market';
 import Numbers from './components/Numbers';
 import TextTicker from './components/TextTicker';
