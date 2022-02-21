@@ -15,7 +15,7 @@ export const marketData = [
         ticker: 'ETH',
         price: 4236.4,
         volume: -3.2,
-        chart: <MiniChart dataSet={[160, -20, 343, 49.3, -100, 200, -78]} strokeColor="#FF6600" />
+        chart: <MiniChart dataSet={[160, -20, 343, 49.3, -100, 200, -78]} strokeColor="#EF4444" />
     },
     {
         iconUrl: 'https://cdn.freelogovectors.net/svg10/solana-logo-freelogovectors.net_.svg',
@@ -23,7 +23,7 @@ export const marketData = [
         ticker: 'SOL',
         price: 112.5,
         volume: -10.9,
-        chart: <MiniChart dataSet={[0, -20, 60, 49.3, -80, 110, -53]} strokeColor="#FF6600" />
+        chart: <MiniChart dataSet={[0, -20, 60, 49.3, -80, 110, -53]} strokeColor="#EF4444" />
     },
     {
         iconUrl: 'https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/cardano_ada-512.png',
@@ -39,6 +39,6 @@ export const marketData = [
         ticker: 'XRP',
         price: 0.87,
         volume: -1.6,
-        chart: <MiniChart dataSet={[0, -20, 150, 49.3, -110, -70, -30]} strokeColor="#FF6600" />
+        chart: <MiniChart dataSet={[0, -20, 150, 49.3, -110, -70, -30]} strokeColor="#EF4444" />
     }
 ];

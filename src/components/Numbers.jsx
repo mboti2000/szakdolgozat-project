@@ -30,7 +30,7 @@ const NumberCard = ({title, number, suffix, prefix, Icon}) =>{
 const Numbers = () => {
   return (
     <div className="h-[1000px] md:h-[600px] p-6 shadow-inner shadow-black bg-[url('/src/images/background.jpg')] object-contain">
-      <h1 className='text-white text-6xl opacity-80 text-center font-["Rajdhani"] py-10'>Trusted by the largest community worldwide</h1>
+      <h1 className='text-white text-3xl md:text-6xl opacity-80 text-center font-["Rajdhani"] py-10'>Trusted by the largest community worldwide</h1>
       <div className='h-[700px] md:h-[500px] max-w-[1200px] mx-auto flex flex-col md:flex-row items-center justify-between'>
       <NumberCard title='Security' number={100} suffix="%" Icon={MdSecurity}/>
       <NumberCard title='Users' number={120000} suffix="+" Icon={FiUsers}/>
