@@ -22,7 +22,7 @@ export const marketData = [
         name: 'Solana',
         ticker: 'SOL',
         price: 112.5,
-        volume: -10.9,
+        volume: -1.9,
         chart: <MiniChart dataSet={[0, -20, 60, 49.3, -80, 110, -53]} strokeColor="#EF4444" />
     },
     {

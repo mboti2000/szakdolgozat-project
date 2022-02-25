@@ -1,6 +1,7 @@
 import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose, AiOutlineUser } from 'react-icons/ai';
 import { useState } from 'react';
+import { slide as Menu } from 'react-burger-menu'
 
 const NavbarItem = ({ title, classProps }) =>{
     return (
@@ -35,23 +36,20 @@ const Header = () => {
 
             <div className='flex relative'>
                 {
-                    toggleMenu ? 
-                    <AiOutlineClose fontSize={28} className='text-white md:hidden cursor-pointer' onClick={() => setToggleMenu(false)} />
-                     : 
+                    !toggleMenu && 
                      <HiMenuAlt4 fontSize={28} className='text-white md:hidden cursor-pointer' onClick={() => setToggleMenu(true)} />
                 }
 
                 {
                     toggleMenu && (
-                        <ul className='z-10 fixed top-0 -right-2 p-3 w-[40vw] h-screen shadow-2xl md:hidden list-none flex flex-col justify-start items-end rounded-md blue-glassmorphism text-white animate-slide-in'>
-                            <li className='text-xl w-full my-2 cursor-pointer'>
-                                <AiOutlineClose onClick={() => setToggleMenu(false)} />
+                            <Menu className='z-10 bg-red-400 backdrop-blur-sm backdrop-opacity-10 fixed top-0 right-0 p-3 h-screen shadow-2xl md:hidden flex flex-col justify-start items-start rounded-md text-white'>
+                            <AiOutlineClose fontSize={28} className='text-white md:hidden mb-5 cursor-pointer z-50' onClick={() => setToggleMenu(false)} />
 
-                            </li>
-                            {headerTitles.map((item, idx) => (
-                                <NavbarItem key={item + idx} title={item} classProps='my-2 text-lg'/>
-                            ))}
-                        </ul>
+                              {headerTitles.map(title => (
+                                  <h2 className='cursor-pointer text-lg py-2'>{title}</h2>
+                              ))}
+                            </Menu>
+                    
                     )
                 }
             </div>
