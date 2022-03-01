@@ -7,7 +7,7 @@ const TextTicker = () => {
     <div className='bg-red-400 text-center p-2'>
       <Ticker height={50} mode="smooth" speed={10}>
         {({ index }) => (
-                <h1 className='bg-red-400 text-center text-lg md:text-3xl font-["Rajdhani"] text-white'>Invite a friend using your referral code and get $15 free in Bitcoin!</h1>
+                <h1 className='bg-red-400 text-center text-md md:text-3xl font-["Rajdhani"] text-white'>Invite a friend using your referral code and get $15 free in Bitcoin!</h1>
         )}
       </Ticker>
     </div>

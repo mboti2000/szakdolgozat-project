@@ -2,7 +2,7 @@ import { HiMenuAlt4 } from 'react-icons/hi';
 import { AiOutlineClose, AiOutlineUser } from 'react-icons/ai';
 import { useState } from 'react';
 import { slide as Menu } from 'react-burger-menu'
-
+import logo from '../images/logo.png'
 const NavbarItem = ({ title, classProps }) =>{
     return (
         <li className={`mx-4 cursor-pointer ${classProps}`}>
@@ -18,7 +18,8 @@ const Header = () => {
 
     return (
         <nav className='opacity-90 z-50 top-0 sticky bg-black w-full flex md:justify-center justify-between items-center p-4'>
-            <div className='md:flex-[0.5] flex-initial justify-center'>
+            <div className='flex md:flex-[0.6] flex-initial justify-center'>
+                <img alt="logo" className="h-10 w-10 object-contain mr-2" src={logo}/>
                 <h1 className='text-white text-3xl font-mono'>CryptoLand</h1>
             </div>
             <ul className='text-white md:flex hidden list-none flex-row justify-between items-center flex-initial'>

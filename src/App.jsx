@@ -2,6 +2,8 @@ import { Header, Footer, Hero } from './components';
 import Market from './components/Market';
 import Numbers from './components/Numbers';
 import TextTicker from './components/TextTicker';
+import Pricing from './components/Pricing';
+
 function App() {
   return (
     <div className="min-h-screen">
@@ -12,6 +14,7 @@ function App() {
         <Numbers />
         <TextTicker />
         <Market />
+        <Pricing />
         <Footer />
     </div>
   );
