@@ -2,6 +2,8 @@ import React from 'react';
 import {BsFacebook, BsInstagram, BsTwitter, BsPinterest} from 'react-icons/bs';
 import {AiFillPhone, AiOutlineMail} from 'react-icons/ai';
 import {MdLocationOn} from 'react-icons/md';
+import logo from '../images/logo.png'
+
 
 const Footer = () => {
     return (
@@ -10,7 +12,7 @@ const Footer = () => {
             <h1 className='text-white text-3xl md:text-6xl mb-3 opacity-80 text-center font-["Rajdhani"] py-10'>Subscribe to our newsletter</h1>
             <div className='flex items-center justify-between bg-white w-full md:w-[500px] mx-auto mb-12 rounded-full h-45 py-1 pl-4 pr-1'>
                 <input className='flex-1 outline-none' type='email' placeholder='Enter your email address...'/>
-                <button className='w-[100px] h-[40px] ml-5 rounded-full bg-red-400 text-white hover:opacity-80'>Subscribe</button>
+                <button className='w-[100px] h-[40px] ml-5 px-1 rounded-full bg-red-400 text-white hover:opacity-80'>Subscribe</button>
             </div>
 
 
@@ -54,7 +56,11 @@ const Footer = () => {
             </div>
 
             <div className='flex flex-col items-center'>
-                <h1 className='text-white text-xl my-3 pb-6'>Follow us on social media</h1>
+                <div className='flex justify-center mb-2'>
+                    <img alt="logo" className="h-10 w-10 object-contain mr-2" src={logo}/>
+                    <h1 className='text-white text-2xl font-mono'>CryptoLand</h1>
+                </div>
+                <h1 className='text-white font-light text-xl my-3 pb-6'>Follow us on social media</h1>
                 <div className='flex space-x-5'>
                     <BsFacebook className='text-gray-500 text-3xl hover:opacity-80 cursor-pointer' />
                     <BsInstagram className='text-gray-500 text-3xl hover:opacity-80 cursor-pointer'/>

@@ -18,7 +18,7 @@ export const marketData = [
         chart: <MiniChart dataSet={[160, -20, 343, 49.3, -100, 200, -78]} strokeColor="#EF4444" />
     },
     {
-        iconUrl: 'https://cdn.freelogovectors.net/svg10/solana-logo-freelogovectors.net_.svg',
+        iconUrl: 'https://seeklogo.com/images/S/solana-sol-logo-12828AD23D-seeklogo.com.png',
         name: 'Solana',
         ticker: 'SOL',
         price: 112.5,

@@ -7,7 +7,7 @@ import Pricing from './components/Pricing';
 function App() {
   return (
     <div className="min-h-screen">
-      <div className='gradient-bg-hero'>
+      <div className="gradient-bg-hero">
         <Header />
         <Hero />
       </div>
