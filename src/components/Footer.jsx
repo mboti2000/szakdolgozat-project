@@ -16,6 +16,7 @@ const Footer = () => {
             </div>
 
 
+
         <div className='w-[80%] mx-auto flex justify-between items-center flex-col md:flex-row mt-6'>
             <div className='flex flex-col items-center md:items-start'>
                 <h1 className='text-white text-xl my-3 items-center md:items-start'>Services</h1>
@@ -48,6 +49,10 @@ const Footer = () => {
                 <div className='flex items-center'>
                     <p className='text-gray-500 text-base hover:opacity-80 cursor-pointer my-1'>cryptoland@support.com</p>
                     <AiOutlineMail className='text-gray-500 pl-2 text-2xl'/>
+                </div>
+                <div className='flex items-center'>
+                    <p className='text-gray-500 text-base hover:opacity-80 cursor-pointer my-1'>06/20-484-9789</p>
+                    <AiFillPhone className='text-gray-500 pl-2 text-2xl'/>
                 </div>
                 <div className='flex items-center'>
                     <p className='text-gray-500 text-base hover:opacity-80 cursor-pointer my-1'>06/20-484-9789</p>
